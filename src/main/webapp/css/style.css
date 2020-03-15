@@ -1,0 +1,100 @@
+body {
+    background-color: #F6F8F6;
+    font-family: Tahoma;
+    background-image: url(../resources/img/fond-ecran.jpg);
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+}
+
+#background-users {
+    background-color: rgba(255, 255, 255, 0.65);
+    background-size: cover;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+#background-admin {
+    margin: auto auto;
+    width: 50%;
+    background-color: rgba(255, 255, 255,0.65);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border-spacing: 50px 10px;
+}
+
+#form-admin {
+    padding: 10px 20px;
+}
+
+#nb-personne {
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    width: 50px;
+}
+
+#image-left {
+    background-image: url(../resources/img/image-left.jpg);
+    background-size: 100px 50px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height: 50px;
+}
+
+#image-right {
+    background-image: url(../resources/img/image-right.jpg);
+    background-size: 90px 70px;
+    background-position:center center;
+    background-repeat:no-repeat;
+    height: 50px;
+}
+
+#header {
+	text-align: center;
+	background-color: #CF022B;
+	padding: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+button {
+	margin: 2px;
+}
+
+.planning {
+	margin-top: 40px;
+}
+
+.planning-case-head {
+	background-color: #F01616;
+	border: solid black 1px;
+	height: 70px;
+}
+
+.planning-case {
+	background-color: #FCDD7D;
+	border: solid black 1px;
+	height: 50px;
+}
+
+.user-gestion {
+	margin-top: 40px;
+	border: solid black 1px;
+}
+
+.myTabStyle {
+	margin-bottom: 50px;
+}
+
+.stamp {
+	height: 100px;
+}
+
+.myCheckStyle{
+	text-align: center;
+}
+
+hr {
+    border: 1px solid #CC0000;
+}

@@ -1,0 +1,14 @@
+{
+  "id": "TEAM1",
+  "name": "Team 1",
+  "members": [
+    {
+      "name": "Tourres",
+      "forename": "Clément",
+      "mail": "clement.tourres@hotmail.com",
+      "date": 1556896596888,
+      "isActive": true,
+      "didBringCroissants": false
+    }
+  ]
+}

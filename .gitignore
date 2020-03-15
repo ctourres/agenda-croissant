@@ -1,0 +1,17 @@
+
+#ignorer le dossier target + build
+target/
+build/
+
+#ignorer les dossiers de la configuration de l'IDE
+.idea/
+.settings/
+
+#ignorer les fichiers de configuration de l'IDE
+.classpath
+.project
+*.iml
+
+src/main/webapp/lib/bootstrap/
+src/main/webapp/lib/fontawesome/
+src/main/webapp/lib/vuejs/

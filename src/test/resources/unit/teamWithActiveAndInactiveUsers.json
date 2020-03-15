@@ -1,0 +1,22 @@
+{
+  "id": "TEAM1",
+  "name": "Team 1",
+  "members": [
+    {
+      "name": "Cécile",
+      "forename": "durand",
+      "mail": "cecile.durand@hotmail.com",
+      "date": 1556896556888,
+      "isActive": false,
+      "didBringCroissants": false
+    },
+    {
+      "name": "Tourres",
+      "forename": "Clément",
+      "mail": "clement.tourres@hotmail.com",
+      "date": 1556896596888,
+      "isActive": true,
+      "didBringCroissants": false
+    }
+  ]
+}

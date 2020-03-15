@@ -1,0 +1,10 @@
+---
+- id: "TEAM1"
+  name: "Team 1"
+  members:
+  - name: "durand"
+    forename: "Cécile"
+    mail: "cecile.durand@hotmail.com"
+    date: 1556896000000
+    isActive: false
+    didBringCroissants: false
