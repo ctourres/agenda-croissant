@@ -4,23 +4,23 @@
 const UserAdd = {
   template: `
     <tr>
-      <td class="col-2" style="padding-right: 40px">
+      <td style="padding-right: 40px; width: 17%;">
         <input v-model="name" type="text" class="form-control" placeholder="Nom"/>
       </td>
-      <td class="col-2" style="padding-right: 40px">
+      <td style="padding-right: 40px; width: 17%;">
         <input v-model="forename" type="text" class="form-control" placeholder="Prénom"/>
       </td>
-      <td class="col-4" style="padding-right: 40px">
+      <td style="padding-right: 40px; width: 30%;">
         <input v-model="mail" type="text" class="form-control" placeholder="Mail"/>
       </td>
-      <td class="col-2">
+      <td style="padding-right: 40px; width: 20%;">
         <div>
           <button id="addButton" v-on:click="addUser()" type="button" class="btn btn-danger">
             <i class="fas fa-user-plus"/>
           </button>
         </div>
       </td>
-      <td class="col-2"></td>
+      <td style="width: 16%;"></td>
     </tr>
   `,
   props: {

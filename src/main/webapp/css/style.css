@@ -62,6 +62,21 @@ button {
 	margin: 2px;
 }
 
+.table-style {
+    table-layout: fixed;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.buttons-style {
+    overflow: visible;
+    text-align: center;
+}
+
 .planning {
 	margin-top: 40px;
 }
@@ -83,16 +98,8 @@ button {
 	border: solid black 1px;
 }
 
-.myTabStyle {
-	margin-bottom: 50px;
-}
-
 .stamp {
 	height: 100px;
-}
-
-.myCheckStyle{
-	text-align: center;
 }
 
 hr {

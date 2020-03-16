@@ -14,15 +14,13 @@ const UserEdit = {
       <td>
         <input v-model="formattedDate" type="date" class="form-control"/>
       </td>
-      <td>
-        <div align="center">
-          <button class="btn btn-danger" v-on:click="editUser()" type="submit">
-            <i class="fa fa-check"></i>
-          </button>
-          <button class="btn btn-danger" v-on:click="cancelUser()" type="button">
-            <i class="fa fa-times"></i>
-          </button>
-        </div>
+      <td class="buttons-style">
+        <button class="btn btn-danger" v-on:click="editUser()" type="submit">
+          <i class="fa fa-check"></i>
+        </button>
+        <button class="btn btn-danger" v-on:click="cancelUser()" type="button">
+          <i class="fa fa-times"></i>
+        </button>
       </td>
     </tr>
   `,

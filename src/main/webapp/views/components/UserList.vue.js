@@ -5,13 +5,11 @@
  */
 const UserList = {
   template: `
-  <div class="row myTabStyle">
-    <div class="col-10 offset-1">
+  <div class="container">
+    <div class="row">
       <div id="background-users">
-        <table class="table table-borderless">
-          <tr>
-            <td><h5>Ajouter une personne</h5></td>
-          </tr>
+        <h5 class="m-3">Ajouter une personne</h5>
+        <table class="table table-borderless table-striped table-style">
           <user-add v-bind:idTeam="idTeam" v-on:refresh="$emit('refresh')"></user-add>
           <tr>
             <td colspan="5">

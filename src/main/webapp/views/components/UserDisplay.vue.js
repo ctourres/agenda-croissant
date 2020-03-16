@@ -7,11 +7,11 @@ const UserDisplay = {
   template: `
     <user-edit v-bind:user="user" v-bind:idTeam="idTeam" v-if="isEdited" v-on:refresh="displayUser()"></user-edit>
     <tr v-else>
-      <td> {{ user.name }} </td>
-      <td> {{ user.forename }} </td>
-      <td> {{ user.mail }} </td>
-      <td> {{ translateDate(user.date) }} </td>
-      <td>
+      <td :title="user.name"> {{ user.name }} </td>
+      <td :title="user.forename"> {{ user.forename }} </td>
+      <td :title="user.mail"> {{ user.mail }} </td>
+      <td :title="translateDate(user.date)"> {{ translateDate(user.date) }} </td>
+      <td class="buttons-style">
         <button type="button" class="btn btn-danger" v-on:click="editUser()">
           <i class="far fa-edit"></i>
         </button>
@@ -20,7 +20,6 @@ const UserDisplay = {
         </button>
       </td>
     </tr>
-
   `,
   components: {
     'user-edit': UserEdit,

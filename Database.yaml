@@ -5,32 +5,20 @@
     croissantDay: 5
     nbPerDay: 1
   members:
-  - name: "durand"
-    forename: "Cécile"
-    mail: "cecile.durand@hotmail.com"
-    date: 1556896596888
-    isActive: false
-    didBringCroissants: false
-  - name: "Jardin"
-    forename: "marc"
-    mail: "marc.jardin@hotmail.com"
-    date: 1554477396888
-    isActive: false
-    didBringCroissants: false
-  - name: "dubois"
-    forename: "Alexandre"
-    mail: "alexandre.dubois@hotmail.com"
-    date: 1553990400000
-    isActive: true
-    didBringCroissants: false
   - name: "test"
-    forename: "dede"
-    mail: "essss"
+    forename: "toto"
+    mail: "toto@email.com"
     date: 1577836800000
     isActive: true
     didBringCroissants: false
-- id: "XPSIOC"
-  name: "XP SIOC"
+  - name: "titi"
+    forename: ""
+    mail: "titi@email.com"
+    date: null
+    isActive: true
+    didBringCroissants: false
+- id: "TEAM2"
+  name: "Team 2"
   config:
     croissantDay: 5
     nbPerDay: 1
@@ -39,11 +27,5 @@
     forename: "test1"
     mail: "test1@hotmail.com"
     date: 1555686996888
-    isActive: true
-    didBringCroissants: false
-  - name: "test2"
-    forename: "test2"
-    mail: "test2@hotmail.com"
-    date: 1556291796888
     isActive: true
     didBringCroissants: false
