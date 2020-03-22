@@ -15,7 +15,7 @@ const PlanningView = {
     </user-list>
 
     <!-- BOUTON AFFECTER PLANNING ALEATOIREMENT -->
-    <div align="center" class="mt-5">
+    <div align="center" class="mt-5 mb-3">
       <button type="button" class="btn btn-danger" v-on:click="generateRandomPlanning()">
         Affecter aléatoirement
       </button>

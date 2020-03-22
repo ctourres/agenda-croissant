@@ -10,17 +10,17 @@ const AdminView = {
     <tr >
         <td id="form-admin">
             <legend align="center"> Nombre de personne par jour</legend>
-            <input type="number" v-model="nbPerDay" id="nb-personne"/>
+            <input type="number" min="1" v-model="nbPerDay" id="nb-personne"/>
 
         </td>
         <td align="left" >
             <legend align="center"> Jour de croissants</legend>
             <form id="form-admin">
-                <input type="radio" name="jour" value="1" v-model="croissantDay"/> Lundi<br>
-                <input type="radio" name="jour" value="2" v-model="croissantDay"/> Mardi<br>
-                <input type="radio" name="jour" value="3" v-model="croissantDay"/> Mercredi<br>
-                <input type="radio" name="jour" value="4" v-model="croissantDay"/> Jeudi<br>
-                <input type="radio" name="jour" value="5" v-model="croissantDay"/> Vendredi<br>
+                <input type="radio" name="jour" value="1" v-model="croissantDayStr"/> Lundi<br>
+                <input type="radio" name="jour" value="2" v-model="croissantDayStr"/> Mardi<br>
+                <input type="radio" name="jour" value="3" v-model="croissantDayStr"/> Mercredi<br>
+                <input type="radio" name="jour" value="4" v-model="croissantDayStr"/> Jeudi<br>
+                <input type="radio" name="jour" value="5" v-model="croissantDayStr"/> Vendredi<br>
             </form>
         </td>
     </tr>
@@ -50,6 +50,17 @@ const AdminView = {
         nbPerDay: 1,
         }
   },
+  computed: {
+    croissantDayStr: {
+      get() {
+        return `${this.croissantDay}`;
+      },
+      set(croissantDay) {
+        this.croissantDay = parseInt(croissantDay);
+      }
+    }
+
+  },
   created(){
     this.configAdminService.getConfig()
     .then((oldConf) => {
@@ -63,11 +74,21 @@ const AdminView = {
     dayInString(croissantDay){
         let res = "";
         switch (croissantDay) {
-            case '1': res = "lundi"; break;
-            case '2': res = "mardi"; break;
-            case '3': res = "mercredi"; break;
-            case '4': res = "jeudi"; break;
-            case '5': res = "vendredi"; break;
+            case 1:
+              res = "lundi";
+              break;
+            case 2:
+              res = "mardi";
+              break;
+            case 3:
+              res = "mercredi";
+              break;
+            case 4:
+              res = "jeudi"; 
+              break;
+            case 5:
+              res = "vendredi"; 
+              break;
             default:;
         }
         return res;
@@ -77,8 +98,9 @@ const AdminView = {
     *
     */
     editConfig(){
-        if ( confirm("Voulez-vous valider cette configuration : "  + this.nbPerDay + " personne(s) chaque " + this.dayInString(this.croissantDay) +" ?" )) {
-          return this.configAdminService.editConfig({croissantDay: this.croissantDay, nbPerDay: this.nbPerDay});
+        if ( confirm("Voulez-vous valider cette configuration : "  + this.nbPerDay + " personne(s) chaque " + this.dayInString(this.croissantDay) + " ?" )) {
+          this.configAdminService.editConfig({croissantDay: this.croissantDay, nbPerDay: this.nbPerDay});
+          router.push(`/${this.idTeam}`);
         }
     },
   }

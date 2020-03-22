@@ -6,6 +6,7 @@ build/
 #ignorer les dossiers de la configuration de l'IDE
 .idea/
 .settings/
+.vscode/
 
 #ignorer les fichiers de configuration de l'IDE
 .classpath
