@@ -38,7 +38,7 @@ const UserList = {
             <th>Date</th>
             <th></th>
           </tr>
-          <user-display v-for="elem in usersBroughtCroissant" v-bind:user="elem" v-on:refresh="$emit('refresh')" v-on:deleteUser="$emit('deleteUser', elem)"></user-display>
+          <user-display v-for="elem in usersBroughtCroissant" v-bind:user="elem" v-bind:idTeam="idTeam" v-on:refresh="$emit('refresh')" v-on:deleteUser="$emit('deleteUser', elem)"></user-display>
         </table>
       </div>
     </div>
