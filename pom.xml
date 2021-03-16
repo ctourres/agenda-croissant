@@ -9,10 +9,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.directory></project.build.directory>
-        <sonar.host.url>http://172.31.207.20:10007</sonar.host.url>
-        <sonar.projectKey>CroissantBack</sonar.projectKey>
-        <sonar.login>sonar</sonar.login>
-        <sonar.password>sonar</sonar.password>
     </properties>
 
     <parent>
@@ -30,8 +26,8 @@
                 <version>3.7.0</version>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
